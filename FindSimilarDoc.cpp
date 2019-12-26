@@ -32,7 +32,7 @@ vector<vector<string> > documents; //二维的向量，用于存储每一篇文�
 vector<uint32_t*> cm;  //特征值矩阵，由于该矩阵十分稀疏，并且每个元素非0即1，因此这里使用位向量来表示，节省空间
 map<string, vector<int> > cmHelper; //用于帮助构建特征值矩阵，存储指定的字符串在哪些文档中出现过
 vector<vector<int> >sm; //签名矩阵
-map<pair<int, int>, double> candidates; //存储候选的文档对以及它们的相似度
+map<pair<int, int>, double> candidates;  //存储候选的文档对以及它们的相似度
 
 //获取指定文件夹下所有文档的名称，并存储起来 
 void GetFiles(string floder, vector<string>& files)
