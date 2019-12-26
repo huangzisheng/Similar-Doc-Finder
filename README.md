@@ -10,3 +10,6 @@
 测试的数据集：20 newsgroups里的rec.sport.baseball，共1000个文档
 
 命令行窗口使用方法：FindSimilarDoc yourFile dataSetFloder，也就是编译的程序名+目标文档+数据集所在的文件夹
+
+程序结果截图: ![image](https://github.com/huangzisheng/Similar-Doc-Finder/output.jpg)
+
