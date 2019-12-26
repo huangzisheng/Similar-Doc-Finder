@@ -8,6 +8,7 @@
  * 2019年12月26日
  */
 
+#include "pch.h"
 #include <iostream>
 #include <vector>
 #include <deque>
