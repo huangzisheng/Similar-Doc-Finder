@@ -365,21 +365,21 @@ int main(int argc, char *argv[])
 
 	srand(time(NULL));
 
-	clock_t startTime, endTime;  //用于计算程序运行时间
+	clock_t startTime, endTime;  	 //用于计算程序运行时间
 	startTime = clock();		 //开始时间
 	
 	string floder = argv[2];	 //比对数据集的文件夹名称
 	GetFiles(floder, files);	 //获取文件里里所有文档的名称
-	ReadAllDocuments(argc, argv);//读取所有文档
+	ReadAllDocuments(argc, argv);    //读取所有文档
 	GenerateKShingles(K);		 //每篇文档里K个单词作为一个字符串
-	GenerateCM();				 //生成特征值矩阵
+	GenerateCM();			 //生成特征值矩阵
 	GenerateSM();		         //生成签名矩阵
-	FindMostSimilar();			 //找到与目标文档最相似的文档
-	FindCandidates();			 //找出所有相似的文档对
+	FindMostSimilar();	         //找到与目标文档最相似的文档
+	FindCandidates();		 //找出所有相似的文档对
 	PrintSimilarDocuments();	 //输出相似度大于0.8的文档对
-	ReleaseResource();			 //释放申请的内存资源
+	ReleaseResource();		 //释放申请的内存资源
 
-	endTime = clock();			 //结束时间
+	endTime = clock();		 //结束时间
 
 	cout << "耗时" << (double)((endTime - startTime) / CLOCKS_PER_SEC) << " 秒" << endl;
 	return 0;
