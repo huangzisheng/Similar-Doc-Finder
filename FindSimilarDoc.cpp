@@ -34,7 +34,7 @@ map<string, vector<int> > cmHelper; //用于帮助构建特征值矩阵，存储
 vector<vector<int> >sm; //签名矩阵
 map<pair<int, int>, double> candidates; //存储候选的文档对以及它们的相似度
 
-//获取指定文件夹下所有文档的名称，并存储起来
+//获取指定文件夹下所有文档的名称，并存储起来 
 void GetFiles(string floder, vector<string>& files)
 {
 	//文件句柄  
