@@ -100,7 +100,7 @@ void ReadAllDocuments(int argc, char *argv[])
 	}
 }
 
-//将k个连续的单词作为一个字符串
+//将k个连续的单词作为一个字符串 
 string Kwords(deque<string>& de)
 {
 	string ret;
